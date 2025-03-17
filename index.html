@@ -1,47 +1,70 @@
 <!DOCTYPE html>
-<html data-ng-app="wokArmyBuilder">
+<html lang="en">
   <head>
-    <link href="assets/wok-army-builder-1.4.1.css" rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-72602136-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-
-    <title>Wrath of Kings Army Builder</title>
+    <link rel="icon" href="./favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+		<link href="./_app/immutable/assets/0.BQljCOpX.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.CuZEN0ma.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BuiXoMIn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CF_j8aOH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CIgHlc0Q.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/H22HGfEF.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.Culjy4mE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D2t-9ra6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/f_OPzNJL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BTjYFo4Z.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.B6Y2XYnn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CpipfKON.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.DRg16prX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DULEB_O-.js"><!--[--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--]--><title>Wrath of Kings Army Builder</title>
   </head>
 
-  <body>
-    <div class="container">
-      <header class="hidden-print row">
-        <h1>
-          <img class="img-responsive" alt="Wrath of Kings Army Builder" src="/assets/images/wok-header.png">
-        </h1>
+  <body data-sveltekit-preload-data="hover">
+    <div class="flex flex-wrap justify-center max-w-6xl mx-auto">
+      <header id="header" class="basis-full">
+        <h1 class="sr-only">Wrath of Kings Army Builder</h1>
+
+        <img alt="Wrath of Kings Army Builder" src="images/wok-header.png">
       </header>
 
-      <main class="row" data-ng-view>
+      <main id="main" class="basis-full" style="display: contents">
+        <!--[--><!--[--><!----><!----><!----><!----><!--[!--><div class="w-full" id="bits-1" data-orientation="horizontal" data-tabs-root=""><!----><!----><!--[!--><div class="bg-primary text-primary-foreground inline-flex justify-center py-2 w-full" id="nav" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" data-tabs-list=""><!----><!----><!--[!--><button class="ring-offset-background focus-visible:ring-ring data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm" id="bits-2" role="tab" data-state="active" data-value="faction" data-orientation="horizontal" aria-selected="true" data-tabs-trigger="" tabindex="0" type="button"><!---->Faction<!----></button><!--]--><!----><!----> <!----><!----><!--[!--><button class="ring-offset-background focus-visible:ring-ring data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm" id="bits-3" role="tab" data-state="inactive" data-value="army" data-orientation="horizontal" data-disabled="" aria-selected="false" data-tabs-trigger="" disabled tabindex="0" type="button"><!---->Army<!----></button><!--]--><!----><!----> <!----><!----><!--[!--><button class="ring-offset-background focus-visible:ring-ring data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm" id="bits-4" role="tab" data-state="inactive" data-value="record_sheet" data-orientation="horizontal" data-disabled="" aria-selected="false" data-tabs-trigger="" disabled tabindex="0" type="button"><!---->Record Sheet<!----></button><!--]--><!----><!----><!----></div><!--]--><!----><!----> <div id="actions" class="float-right"><!----><!--[!--><button id="bits-5" aria-haspopup="dialog" aria-expanded="false" data-dialog-trigger="" data-state="closed"><span class="sr-only">Share</span> <i class="fa fa-share p-2"></i><!----></button><!--]--><!----> <button><span class="sr-only">Print</span> <i class="fa fa-print p-2"></i></button></div> <!----><!----><!--[!--><div class="pb-3 px-3 ring-offset-background focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 clear-right" id="faction_tab" role="tabpanel" tabindex="0" data-value="faction" data-state="active" data-tabs-content=""><!----><!----><!--[!--><button class="border-current bg-secondary ring-offset-background data-[placeholder]:text-muted-foreground focus:ring-ring flex h-10 w-full items-center justify-between rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 max-w-xs mx-auto mb-3" id="bits-6" aria-haspopup="listbox" aria-expanded="false" data-state="closed" data-placeholder="" data-select-trigger="" type="button"><!---->Please select a game size…<!----> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-chevron-down size-4 opacity-50"><!--[--><!----><path d="m6 9 6 6 6-6"><!----></path><!----><!--]--><!----><!----><!----><!----></svg><!----><!----></button><!--]--><!----><!----><!----><!----> <!----><!--[!--><!--]--><!----><!----><!----><!----><!----> <!--[!--><!--[!--><!--]--><!--]--><!----> <!----><!--[!--><div class="grid gap-2 max-w-sm mx-auto" id="bits-7" role="radiogroup" aria-required="false" data-orientation="vertical" data-radio-group-root=""><!--[--><!----><!--[!--><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" id="bits-8" data-label-root=""><!----><!--[!--><button class="border-primary text-primary ring-offset-background focus-visible:ring-ring aspect-square size-4 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sr-only peer" id="bits-9" data-value="/src/lib/json/factions/goritsi.json" data-orientation="vertical" data-state="unchecked" aria-checked="false" data-radio-group-item="" type="button" role="radio" tabindex="0"><div class="flex items-center justify-center"><!--[!--><!--]--></div><!----></button><!--]--><!----><!----> <img class="box-content bg-primary/10 border border-primary cursor-pointer p-2 hover:bg-secondary/40 peer-data-[state=checked]:bg-secondary/40 ring-ring ring-offset-background ring-offset-2 peer-focus:ring-2" alt="Goritsi" src="images/goritsi.png"><!----></label><!--]--><!----><!----><!--[!--><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" id="bits-10" data-label-root=""><!----><!--[!--><button class="border-primary text-primary ring-offset-background focus-visible:ring-ring aspect-square size-4 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sr-only peer" id="bits-11" data-value="/src/lib/json/factions/hadross.json" data-orientation="vertical" data-state="unchecked" aria-checked="false" data-radio-group-item="" type="button" role="radio" tabindex="0"><div class="flex items-center justify-center"><!--[!--><!--]--></div><!----></button><!--]--><!----><!----> <img class="box-content bg-primary/10 border border-primary cursor-pointer p-2 hover:bg-secondary/40 peer-data-[state=checked]:bg-secondary/40 ring-ring ring-offset-background ring-offset-2 peer-focus:ring-2" alt="Hadross" src="images/hadross.png"><!----></label><!--]--><!----><!----><!--[!--><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" id="bits-12" data-label-root=""><!----><!--[!--><button class="border-primary text-primary ring-offset-background focus-visible:ring-ring aspect-square size-4 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sr-only peer" id="bits-13" data-value="/src/lib/json/factions/nasier.json" data-orientation="vertical" data-state="unchecked" aria-checked="false" data-radio-group-item="" type="button" role="radio" tabindex="0"><div class="flex items-center justify-center"><!--[!--><!--]--></div><!----></button><!--]--><!----><!----> <img class="box-content bg-primary/10 border border-primary cursor-pointer p-2 hover:bg-secondary/40 peer-data-[state=checked]:bg-secondary/40 ring-ring ring-offset-background ring-offset-2 peer-focus:ring-2" alt="Nasier" src="images/nasier.png"><!----></label><!--]--><!----><!----><!--[!--><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" id="bits-14" data-label-root=""><!----><!--[!--><button class="border-primary text-primary ring-offset-background focus-visible:ring-ring aspect-square size-4 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sr-only peer" id="bits-15" data-value="/src/lib/json/factions/shael-han.json" data-orientation="vertical" data-state="unchecked" aria-checked="false" data-radio-group-item="" type="button" role="radio" tabindex="0"><div class="flex items-center justify-center"><!--[!--><!--]--></div><!----></button><!--]--><!----><!----> <img class="box-content bg-primary/10 border border-primary cursor-pointer p-2 hover:bg-secondary/40 peer-data-[state=checked]:bg-secondary/40 ring-ring ring-offset-background ring-offset-2 peer-focus:ring-2" alt="Shael Han" src="images/shael-han.png"><!----></label><!--]--><!----><!----><!--[!--><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" id="bits-16" data-label-root=""><!----><!--[!--><button class="border-primary text-primary ring-offset-background focus-visible:ring-ring aspect-square size-4 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sr-only peer" id="bits-17" data-value="/src/lib/json/factions/teknes.json" data-orientation="vertical" data-state="unchecked" aria-checked="false" data-radio-group-item="" type="button" role="radio" tabindex="0"><div class="flex items-center justify-center"><!--[!--><!--]--></div><!----></button><!--]--><!----><!----> <img class="box-content bg-primary/10 border border-primary cursor-pointer p-2 hover:bg-secondary/40 peer-data-[state=checked]:bg-secondary/40 ring-ring ring-offset-background ring-offset-2 peer-focus:ring-2" alt="Teknes" src="images/teknes.png"><!----></label><!--]--><!----><!--]--><!----></div><!--]--> <!--[!--><!--]--><!----><!----><!----><!----></div><!--]--><!----><!----> <!----><!----><!--[!--><div class="pb-3 px-3 ring-offset-background focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 clear-right" id="army_tab" role="tabpanel" hidden tabindex="0" data-value="army" data-state="inactive" data-tabs-content=""><!----><!--[!--><div class="max-w-[45rem] mx-auto" id="bits-18" data-orientation="vertical" data-accordion-root=""><!----><!----><!--[!--><div class="mb-1" id="bits-19" data-state="closed" data-orientation="vertical" data-accordion-item=""><!----><!----><!--[!--><div class="flex" id="bits-20" role="heading" aria-level="3" data-heading-level="3" data-state="closed" data-orientation="vertical" data-accordion-header=""><!----><!--[!--><button type="button" class="bg-primary ring-offset-background rounded-t-md px-4 py-3 text-primary-foreground font-bold flex flex-1 items-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:bg-primary/90 data-[state=closed]:rounded-b-md [&amp;[data-state=open]>svg]:rotate-180" id="bits-21" aria-expanded="false" aria-disabled="false" data-state="closed" data-orientation="vertical" data-accordion-trigger="" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-chevron-down size-4 shrink-0 transition-transform duration-200"><!--[--><!----><path d="m6 9 6 6 6-6"><!----></path><!----><!--]--><!----><!----><!----><!----></svg><!----> <span class="basis-full px-2 text-left">Core List</span><!----><!----></button><!--]--><!----><!----></div><!--]--><!----><!----> <!----><!----><!--[--><!--[!--><div class="border border-current rounded-b-md p-3 pb-2 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden transition-all" id="bits-22" data-state="closed" data-orientation="vertical" data-accordion-content="" style="--bits-accordion-content-height: 0px; --bits-accordion-content-width: 0px;" hidden><div><!----><!--[!--><div id="bits-23" data-orientation="vertical" data-accordion-root=""><!--[--><!--]--><!----></div><!--]--><!----><!----></div><!----></div><!--]--><!----><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----> <!--[--><!--]--><!----></div><!--]--><!----><!----></div><!--]--><!----><!----> <!----><!----><!--[!--><div class="pb-3 px-3 ring-offset-background focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 clear-right" id="record_sheet_tab" role="tabpanel" hidden tabindex="0" data-value="record_sheet" data-state="inactive" data-tabs-content=""><table class="svelte-dxlk81"><caption class="svelte-dxlk81">Conquest of Kings Record Sheet</caption><tbody><tr><td class="svelte-dxlk81"><b>Player Name:</b></td><td class="svelte-dxlk81"><b>Faction:</b> </td></tr></tbody></table> <table class="text-center svelte-dxlk81"><thead class="svelte-dxlk81"><tr><th class="svelte-dxlk81">Round</th><th class="svelte-dxlk81">Game Result</th><th class="svelte-dxlk81">Motivation</th><th class="svelte-dxlk81"><abbr title="Leadership">LD</abbr> Points</th><th class="svelte-dxlk81">Rank Points</th><th class="svelte-dxlk81">Opponent</th></tr></thead><tbody><!--[--><tr><td class="svelte-dxlk81">1</td><td class="svelte-dxlk81"><abbr title="Win">W</abbr>/<abbr title="Loss">L</abbr>/<abbr title="Tie">T</abbr></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td></tr><tr><td class="svelte-dxlk81">2</td><td class="svelte-dxlk81"><abbr title="Win">W</abbr>/<abbr title="Loss">L</abbr>/<abbr title="Tie">T</abbr></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td></tr><tr><td class="svelte-dxlk81">3</td><td class="svelte-dxlk81"><abbr title="Win">W</abbr>/<abbr title="Loss">L</abbr>/<abbr title="Tie">T</abbr></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td></tr><tr><td class="svelte-dxlk81">4</td><td class="svelte-dxlk81"><abbr title="Win">W</abbr>/<abbr title="Loss">L</abbr>/<abbr title="Tie">T</abbr></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td></tr><tr><td class="svelte-dxlk81">5</td><td class="svelte-dxlk81"><abbr title="Win">W</abbr>/<abbr title="Loss">L</abbr>/<abbr title="Tie">T</abbr></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td><td class="svelte-dxlk81"></td></tr><!--]--></tbody></table> <table class="svelte-dxlk81"><caption class="svelte-dxlk81">Core List</caption><thead class="svelte-dxlk81"><tr><th class="svelte-dxlk81">Model Name</th><th class="svelte-dxlk81">Type</th><th class="svelte-dxlk81">Quantity</th></tr></thead><!--[!--><!--]--></table> <!--[--><!--]--><!----></div><!--]--><!----><!----><!----></div><!--]--><!----> <!----><!----><!--[!--><!--]--><!----><!----><!----><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1e8cnde = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BuiXoMIn.js"),
+						import("./_app/immutable/entry/app.Culjy4mE.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+
         <noscript>
-          <p class="alert alert-info">This Wrath of Kings army builder requires JavaScript to be enabled in your browser.</p>
+          <p>Please enable JavaScript to use this Wrath of Kings army builder.</p>
         </noscript>
       </main>
 
-      <footer class="hidden-print row text-center">
-        <div class="col-xs-12">
-          <p>This website is completely unofficial and in no way endorsed by CoolMiniOrNot <abbr title="Incorporated">Inc</abbr>.</p>
+      <footer id="footer" class="basis-full text-center border-t border-primary p-3 text-xs">
+        <p class="mb-3">This website is completely unofficial and in no way endorsed by CoolMiniOrNot <abbr title="Incorporated">Inc</abbr>.</p>
 
-          <p>This Wrath of Kings army builder is open source and maintained on <a href="https://github.com/dsusco/wok-army-builder">GitHub</a>.</p>
-        </div>
+        <p>This Wrath of Kings army builder is open source and maintained on <a class="text-yellow-800 hover:text-amber-700 hover:underline" href="https://github.com/dsusco/wok-army-builder">GitHub</a>.</p>
       </footer>
     </div>
-    
-    <script src="assets/wok-army-builder-1.4.1.js"></script>
   </body>
 </html>
